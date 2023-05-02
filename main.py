@@ -10,7 +10,7 @@ from random import randint
 W = 600
 H = 300
 display_surface = pygame.display.set_mode((W, H))
-pygame.display.set_caption("10-Collision detection, at 60 fps")
+pygame.display.set_caption("10-Collision detection, at 30 fps")
 
 
 async def main():
@@ -127,7 +127,7 @@ async def main():
         pygame.display.flip()
         await asyncio.sleep(0)  # Must always be there, and always 0
         # Sett fps
-        clock.tick(60)  # 60 fps, løkka tar minimum 1/60 sekund
+        clock.tick(30)  # 30 fps, løkka tar minimum 1/60 sekund
 
 
     pygame.quit()
